@@ -1,0 +1,15 @@
+import re
+# To Find special Character and Digits into string
+
+a="The App Store description also indicates that Dot AI has an infinite long-term memory and can assist with career advice and date spot recommendations. While a free plan offers limited conversations, users can bypass this limit by purchasing the paid plan for $11.99 per month, which includes access to Chronicles, a feature that curates a history of the user’s personal evolution."
+
+x= re.findall("[0123456789]",a)
+print(x)
+
+y= re.findall("[!@#$%^&*?]",a)
+print(y)
+
+
+OUTPUT:
+['1', '1', '9', '9']
+['$']
