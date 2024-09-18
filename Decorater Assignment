@@ -1,0 +1,16 @@
+def greet_decorator(func):
+    def wrapper(a):
+        print("Hello! Welcome to the Project.")
+        return func(a)
+    return wrapper
+@greet_decorator
+def say_name(name):
+    print(f"My name is {name}.")
+
+
+say_name("Reshma")
+
+
+OUTPUT:
+Hello! Welcome to the function.
+My name is Reshma.
